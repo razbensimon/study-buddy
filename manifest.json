@@ -2,7 +2,7 @@
     "name": "StuddyBuddy",
     "version": "1.0",
     "description": "A Chrome Extension project for making study experience easier!",
-    "permissions": ["storage","declarativeContent"],
+    "permissions": ["storage","declarativeContent", "contextMenus", "tabs"],
     "background": {
         "service_worker": "background.js"
       },
