@@ -4,10 +4,7 @@
   "version": "1.0",
   "description": "A Chrome Extension project for making study experience easier!",
   "permissions": ["storage","declarativeContent", "contextMenus", "tabs"],
-  "optional_permissions": [
-
-  ],
-  "host_permissions": [
+  "host_permissions": [ 
     "<all_urls>"
   ],
   "content_scripts": [

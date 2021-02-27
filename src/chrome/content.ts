@@ -30,3 +30,20 @@ const messagesFromReactAppListener = (message: ChromeMessage, sender: any, respo
  * Fired when a message is sent from either an extension process or a content script.
  */
 chrome.runtime.onMessage.addListener(messagesFromReactAppListener);
+
+
+function getSelected() {
+    var selected =  window.getSelection().toString();
+
+    if (!selected) {
+        return;
+    }
+    
+console.log(selected);
+    
+}
+
+document.addEventListener('mouseup', getSelected)
+
+
+
