@@ -1,0 +1,35 @@
+{
+  "name": "StuddyBuddy",
+  "manifest_version": 3,
+  "version": "1.0",
+  "description": "A Chrome Extension project for making study experience easier!",
+  "permissions": ["storage","declarativeContent", "contextMenus", "tabs"],
+  "optional_permissions": [
+
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["./static/js/content.js"],
+      "all_frames": false,
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open OCR",
+    "default_icon": {
+      "32": "images/logo-32.png",
+      "64": "images/logo-64.png",
+      "128": "images/logo-128.png"
+    }
+  },
+  "icons": {
+    "32": "images/logo-32.png",
+    "64": "images/logo-64.png",
+    "128": "images/logo-128.png"
+  }
+}
