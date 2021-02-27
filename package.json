@@ -14,7 +14,8 @@
   },
   "homepage": "https://github.com/razbensimon/study-buddy#readme",
   "devDependencies": {
-    "@types/chrome": "^0.0.133"
+    "@types/chrome": "^0.0.133",
+    "cross-env": "^7.0.3"
   },
   "dependencies": {
     "@craco/craco": "^6.1.1",
@@ -35,7 +36,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "INLINE_RUNTIME_CHUNK=false craco build",
+    "build": "cross-env INLINE_RUNTIME_CHUNK=false craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
