@@ -102,3 +102,10 @@ dist
 
 # TernJS port file
 .tern-port
+
+# webstorm
+/.idea/
+
+# our rules:
+*.js
+*.js.map

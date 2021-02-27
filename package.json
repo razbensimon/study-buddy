@@ -1,0 +1,30 @@
+{
+  "name": "study-buddy",
+  "version": "1.0.0",
+  "description": "A Chrome Extension project for making study experience easier",
+  "main": "background.js",
+  "dependencies": {
+    "@popperjs/core": "^2.8.6",
+    "react": "^17.0.1",
+    "react-popper": "^2.2.4"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.133",
+    "typescript": "^4.2.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razbensimon/study-buddy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/razbensimon/study-buddy/issues"
+  },
+  "homepage": "https://github.com/razbensimon/study-buddy#readme"
+}
