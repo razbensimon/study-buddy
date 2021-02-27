@@ -2,17 +2,7 @@
   "name": "study-buddy",
   "version": "1.0.0",
   "description": "A Chrome Extension project for making study experience easier",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/razbensimon/study-buddy.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/razbensimon/study-buddy/issues"
-  },
-  "homepage": "https://github.com/razbensimon/study-buddy#readme",
+  "author": "Raz Ben Simon & Sebastian Altheim",
   "devDependencies": {
     "@types/chrome": "^0.0.133",
     "cross-env": "^7.0.3"
@@ -57,5 +47,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "license": "ISC",
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/razbensimon/study-buddy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razbensimon/study-buddy.git"
   }
 }
