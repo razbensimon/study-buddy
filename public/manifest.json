@@ -27,6 +27,18 @@
       "128": "images/logo-128.png"
     }
   },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "*",
+        "static/*",
+        "static/js/*.map",
+        "static/css/*.map"
+      ],
+      "matches": [],
+      "extension_ids": []
+    }
+  ],
   "icons": {
     "32": "images/logo-32.png",
     "64": "images/logo-64.png",
