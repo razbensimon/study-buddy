@@ -13,8 +13,11 @@ chrome.contextMenus.onClicked.addListener((info: chrome.contextMenus.OnClickData
     chrome.tabs.create({url: "https://en.wikipedia.org/w/index.php?search=" + info.selectionText});
 });
 
-chrome.contextMenus.create({
-    title: "Search with StudyBuddy",
-    contexts: ["selection"],
-    id: "STUDY_BUDDY"
+
+chrome.contextMenus.remove("STUDY_BUDDY", ()=>{
+    chrome.contextMenus.create({
+        title: "Search with StudyBuddy",
+        contexts: ["selection"],
+        id: "STUDY_BUDDY"
+    });
 });
