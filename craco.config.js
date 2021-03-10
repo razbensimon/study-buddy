@@ -10,18 +10,24 @@ module.exports = {
                 ...webpackConfig,
                 entry: {
                     main: [env === 'development' && require.resolve('react-dev-utils/webpackHotDevClient'), paths.appIndexJs].filter(Boolean),
-                    content: './src/chrome/content.ts',
+                    content: './src/chrome/content.tsx',
                     background: './src/chrome/background.ts'
                 },
                 output: {
                     ...webpackConfig.output,
-                    filename:(pathData) => {
+                    filename: (pathData) => {
                         return pathData.chunk.name === 'background' ? '[name].js' : 'static/js/[name].js';
                     }
                 },
                 optimization: {
                     ...webpackConfig.optimization,
                     runtimeChunk: false,
+                    minimize: false,
+                    splitChunks: {
+                        cacheGroups: {
+                            default: false
+                        }
+                    }
                 }
             }
         },
